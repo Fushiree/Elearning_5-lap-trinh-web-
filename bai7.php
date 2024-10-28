@@ -12,6 +12,9 @@
         td{
             border: 1px solid black;
         }
+        form{
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -34,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     for ($i = 1; $i <= $dong; $i++) {
         echo "<tr>";
         for ($j = 1; $j <= $cot; $j++) {
-            echo "<td>hàng $i, hàng $j</td>";
+            echo "<td>hàng $i<br>cột $j</td>";
         }
         echo "</tr>";
     }
